@@ -1,9 +1,12 @@
+
 port: 7890
-socks-port: 7890
-allow-lan: true
-mode: url-test
+socks-port: 7891
+allow-lan: false
+mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
+
+proxies:
 
 proxy-groups:
   - name: 🔰 Select
@@ -95,21 +98,21 @@ proxy-groups:
       - UFO
       - We VPN
       - XY VPN
-  - name: 🌀 Protocol
-    type: select
-    proxies:
-      - 👻 SS
-      - 🐴 Trojan
-  - name: ✳️ Manual
-    type: select
-    use:
-      - all
   - name: 🔃 Auto
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - all
+  - name: ✳️ Manual
+    type: select
+    use:
+      - all
+  - name: 🌀 Protocol
+    type: select
+    proxies:
+      - 👻 SS
+      - 🐴 Trojan
   - name: 🐴 Trojan
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
@@ -1056,6 +1059,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   Trojan O2ray 🇨🇿:
     type: http
@@ -1064,6 +1069,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   Trojan O2ray 🇮🇳:
     type: http
@@ -1072,6 +1079,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   Trojan O2ray 🇯🇵:
     type: http
@@ -1080,6 +1089,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   Trojan O2ray 🇸🇬:
     type: http
@@ -1088,6 +1099,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   Trojan O2ray 🇺🇸:
     type: http
@@ -1096,6 +1109,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇦🇺: 
     type: http
@@ -1104,6 +1119,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇬🇧: 
     type: http
@@ -1112,6 +1129,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇧🇬: 
     type: http
@@ -1120,6 +1139,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇨🇦: 
     type: http
@@ -1128,6 +1149,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇨🇳: 
     type: http
@@ -1136,6 +1159,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇫🇷: 
     type: http
@@ -1144,6 +1169,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇩🇪: 
     type: http
@@ -1152,6 +1179,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇭🇰: 
     type: http
@@ -1160,6 +1189,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇮🇱: 
     type: http
@@ -1168,6 +1199,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇮🇹: 
     type: http
@@ -1176,6 +1209,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇯🇵: 
     type: http
@@ -1184,6 +1219,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇲🇽: 
     type: http
@@ -1192,6 +1229,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇳🇱: 
     type: http
@@ -1200,6 +1239,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇳🇿: 
     type: http
@@ -1208,6 +1249,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇵🇱: 
     type: http
@@ -1216,6 +1259,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇷🇺: 
     type: http
@@ -1224,6 +1269,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇸🇬: 
     type: http
@@ -1232,6 +1279,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇺🇸: 
     type: http
@@ -1240,6 +1289,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS O2ray 🇻🇳: 
     type: http
@@ -1248,6 +1299,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇦🇷: 
     type: http
@@ -1256,6 +1309,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇦🇺: 
     type: http
@@ -1264,6 +1319,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇦🇹: 
     type: http
@@ -1272,6 +1329,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇦🇿: 
     type: http
@@ -1280,6 +1339,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇧🇪: 
     type: http
@@ -1288,6 +1349,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇧🇦: 
     type: http
@@ -1296,6 +1359,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇧🇷: 
     type: http
@@ -1304,6 +1369,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇬🇧: 
     type: http
@@ -1312,6 +1379,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇧🇬: 
     type: http
@@ -1320,6 +1389,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇨🇦: 
     type: http
@@ -1328,6 +1399,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇨🇱: 
     type: http
@@ -1336,6 +1409,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇨🇴: 
     type: http
@@ -1344,6 +1419,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇭🇷: 
     type: http
@@ -1352,6 +1429,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇨🇾: 
     type: http
@@ -1360,6 +1439,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇨🇿: 
     type: http
@@ -1368,6 +1449,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇩🇰: 
     type: http
@@ -1376,6 +1459,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇫🇮: 
     type: http
@@ -1384,6 +1469,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇫🇷: 
     type: http
@@ -1392,6 +1479,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇩🇪: 
     type: http
@@ -1400,6 +1489,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇬🇷: 
     type: http
@@ -1408,6 +1499,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇭🇰: 
     type: http
@@ -1416,6 +1509,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇭🇺: 
     type: http
@@ -1424,6 +1519,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇮🇳: 
     type: http
@@ -1432,6 +1529,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇮🇩: 
     type: http
@@ -1440,6 +1539,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇮🇪: 
     type: http
@@ -1448,6 +1549,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇮🇸: 
     type: http
@@ -1456,6 +1559,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇮🇲: 
     type: http
@@ -1464,6 +1569,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇮🇱: 
     type: http
@@ -1472,6 +1579,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇮🇹: 
     type: http
@@ -1480,6 +1589,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇯🇵: 
     type: http
@@ -1488,6 +1599,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇰🇷: 
     type: http
@@ -1496,6 +1609,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇱🇻: 
     type: http
@@ -1504,6 +1619,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇱🇺: 
     type: http
@@ -1512,6 +1629,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇲🇰: 
     type: http
@@ -1520,6 +1639,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇲🇾: 
     type: http
@@ -1528,6 +1649,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇲🇹: 
     type: http
@@ -1536,6 +1659,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇲🇽: 
     type: http
@@ -1544,6 +1669,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇲🇩: 
     type: http
@@ -1552,6 +1679,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇳🇱: 
     type: http
@@ -1560,6 +1689,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇳🇴: 
     type: http
@@ -1568,6 +1699,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇵🇱: 
     type: http
@@ -1576,6 +1709,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇵🇹: 
     type: http
@@ -1584,6 +1719,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇷🇴: 
     type: http
@@ -1592,6 +1729,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇷🇺: 
     type: http
@@ -1600,6 +1739,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇷🇸: 
     type: http
@@ -1608,6 +1749,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇸🇬: 
     type: http
@@ -1616,6 +1759,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇸🇰: 
     type: http
@@ -1624,6 +1769,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇸🇮: 
     type: http
@@ -1632,6 +1779,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇿🇦: 
     type: http
@@ -1640,6 +1789,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇪🇸: 
     type: http
@@ -1648,6 +1799,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇸🇪: 
     type: http
@@ -1656,6 +1809,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇨🇭: 
     type: http
@@ -1664,6 +1819,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇹🇼: 
     type: http
@@ -1672,6 +1829,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇹🇷: 
     type: http
@@ -1680,6 +1839,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇺🇦: 
     type: http
@@ -1688,6 +1849,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇺🇸: 
     type: http
@@ -1696,6 +1859,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇺🇲: 
     type: http
@@ -1704,6 +1869,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Aloha 🇻🇳: 
     type: http
@@ -1712,6 +1879,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Miscellaneous 🇦🇺: 
     type: http
@@ -1720,6 +1889,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Miscellaneous 🇬🇧: 
     type: http
@@ -1728,6 +1899,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Miscellaneous 🇭🇰: 
     type: http
@@ -1736,6 +1909,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Miscellaneous 🇯🇵: 
     type: http
@@ -1744,6 +1919,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Miscellaneous 🇰🇷: 
     type: http
@@ -1752,6 +1929,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS PrivateVPN 🇬🇧: 
     type: http
@@ -1760,6 +1939,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS PrivateVPN 🇫🇷: 
     type: http
@@ -1768,6 +1949,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS PrivateVPN 🇸🇬: 
     type: http
@@ -1776,6 +1959,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇦🇺: 
     type: http
@@ -1784,6 +1969,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇦🇿: 
     type: http
@@ -1792,6 +1979,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇧🇷: 
     type: http
@@ -1800,6 +1989,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇬🇧: 
     type: http
@@ -1808,6 +1999,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇨🇦: 
     type: http
@@ -1816,6 +2009,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇩🇰: 
     type: http
@@ -1824,6 +2019,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇪🇪: 
     type: http
@@ -1832,6 +2029,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇫🇷: 
     type: http
@@ -1840,6 +2039,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇩🇪: 
     type: http
@@ -1848,6 +2049,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇬🇷: 
     type: http
@@ -1856,6 +2059,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇭🇰: 
     type: http
@@ -1864,6 +2069,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇭🇺: 
     type: http
@@ -1872,6 +2079,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇮🇸: 
     type: http
@@ -1880,6 +2089,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇮🇪: 
     type: http
@@ -1888,6 +2099,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇮🇱: 
     type: http
@@ -1896,6 +2109,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇮🇹: 
     type: http
@@ -1904,6 +2119,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇯🇵: 
     type: http
@@ -1912,6 +2129,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇰🇷: 
     type: http
@@ -1920,6 +2139,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇳🇱: 
     type: http
@@ -1928,6 +2149,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇳🇴: 
     type: http
@@ -1936,6 +2159,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇵🇱: 
     type: http
@@ -1944,6 +2169,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇷🇴: 
     type: http
@@ -1952,6 +2179,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇷🇺: 
     type: http
@@ -1960,6 +2189,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇸🇪: 
     type: http
@@ -1968,6 +2199,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇨🇭: 
     type: http
@@ -1976,6 +2209,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇹🇭: 
     type: http
@@ -1984,6 +2219,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇹🇷: 
     type: http
@@ -1992,6 +2229,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇺🇦: 
     type: http
@@ -2000,6 +2239,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Speedy Quark 🇺🇸: 
     type: http
@@ -2008,6 +2249,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Time VPN 🇩🇪: 
     type: http
@@ -2016,6 +2259,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Time VPN 🇳🇱: 
     type: http
@@ -2024,6 +2269,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Time VPN 🇷🇺: 
     type: http
@@ -2032,6 +2279,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Time VPN 🇸🇪: 
     type: http
@@ -2040,6 +2289,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS Time VPN 🇺🇸: 
     type: http
@@ -2048,6 +2299,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇦🇺: 
     type: http
@@ -2056,6 +2309,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇧🇪: 
     type: http
@@ -2064,6 +2319,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇧🇷: 
     type: http
@@ -2072,6 +2329,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇬🇧: 
     type: http
@@ -2080,6 +2339,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇨🇦: 
     type: http
@@ -2088,6 +2349,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇨🇳: 
     type: http
@@ -2096,6 +2359,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇫🇷: 
     type: http
@@ -2104,6 +2369,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇩🇪: 
     type: http
@@ -2112,6 +2379,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇭🇰: 
     type: http
@@ -2120,6 +2389,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇮🇳: 
     type: http
@@ -2128,6 +2399,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇮🇪: 
     type: http
@@ -2136,6 +2409,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇮🇱: 
     type: http
@@ -2144,6 +2419,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇮🇹: 
     type: http
@@ -2152,6 +2429,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇯🇵: 
     type: http
@@ -2160,6 +2439,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇰🇷: 
     type: http
@@ -2168,6 +2449,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇳🇱: 
     type: http
@@ -2176,6 +2459,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇳🇿: 
     type: http
@@ -2184,6 +2469,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇳🇴: 
     type: http
@@ -2192,6 +2479,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇵🇭: 
     type: http
@@ -2200,6 +2489,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇷🇺: 
     type: http
@@ -2208,6 +2499,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇸🇬: 
     type: http
@@ -2216,6 +2509,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇸🇪: 
     type: http
@@ -2224,6 +2519,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇨🇭: 
     type: http
@@ -2232,6 +2529,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇹🇼: 
     type: http
@@ -2240,6 +2539,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇹🇷: 
     type: http
@@ -2248,6 +2549,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇦🇪: 
     type: http
@@ -2256,6 +2559,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS UFO 🇺🇸: 
     type: http
@@ -2264,6 +2569,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇦🇷: 
     type: http
@@ -2272,6 +2579,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇦🇹: 
     type: http
@@ -2280,6 +2589,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇧🇪: 
     type: http
@@ -2288,6 +2599,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇧🇬: 
     type: http
@@ -2296,6 +2609,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇨🇿: 
     type: http
@@ -2304,6 +2619,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇪🇬: 
     type: http
@@ -2312,6 +2629,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇫🇮: 
     type: http
@@ -2320,6 +2639,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇮🇳: 
     type: http
@@ -2328,6 +2649,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇮🇩: 
     type: http
@@ -2336,6 +2659,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇱🇺: 
     type: http
@@ -2344,6 +2669,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇲🇾: 
     type: http
@@ -2352,6 +2679,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇲🇽: 
     type: http
@@ -2360,6 +2689,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇳🇿: 
     type: http
@@ -2368,6 +2699,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇳🇬: 
     type: http
@@ -2376,6 +2709,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇵🇭: 
     type: http
@@ -2384,6 +2719,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇵🇹: 
     type: http
@@ -2392,6 +2729,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇷🇸: 
     type: http
@@ -2400,6 +2739,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇸🇬: 
     type: http
@@ -2408,6 +2749,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇿🇦: 
     type: http
@@ -2416,6 +2759,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇪🇸: 
     type: http
@@ -2424,6 +2769,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇹🇼: 
     type: http
@@ -2432,6 +2779,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇦🇪: 
     type: http
@@ -2440,6 +2789,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS We VPN 🇻🇳: 
     type: http
@@ -2448,6 +2799,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇬🇧: 
     type: http
@@ -2456,6 +2809,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇨🇦: 
     type: http
@@ -2464,6 +2819,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇫🇷: 
     type: http
@@ -2472,6 +2829,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇩🇪: 
     type: http
@@ -2480,6 +2839,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇮🇳: 
     type: http
@@ -2488,6 +2849,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇮🇹: 
     type: http
@@ -2496,6 +2859,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇯🇵: 
     type: http
@@ -2504,6 +2869,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇰🇷: 
     type: http
@@ -2512,6 +2879,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇳🇴: 
     type: http
@@ -2520,6 +2889,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇵🇱: 
     type: http
@@ -2528,6 +2899,8 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
   SS XY VPN 🇺🇸: 
     type: http
@@ -2536,6 +2909,18 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
+      tolerance: 500
+      lazy: true
+      url: http://www.gstatic.com/generate_204
+  all: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/all.yaml"
+    path: xy/xy-ss-us.yaml
+    health-check:
+      enable: true
+      interval: 300
+      tolerance: 500
+      lazy: true
       url: http://www.gstatic.com/generate_204
 
 rules:
