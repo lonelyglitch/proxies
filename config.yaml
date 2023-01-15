@@ -1,0 +1,2549 @@
+port: 7890
+socks-port: 7890
+allow-lan: true
+mode: url-test
+log-level: info
+external-controller: 127.0.0.1:9090
+
+proxy-groups:
+  - name: 🔰 Select
+    type: select
+    proxies:
+      - 🌍 Country
+      - 🔧 Service
+      - ✳️ Manual
+      - 🔃 Auto
+      - 🌀 Protocol
+  - name: 🌍 Country
+    type: select
+    proxies:
+      - 🇦🇷
+      - 🇦🇺
+      - 🇦🇹
+      - 🇦🇿
+      - 🇧🇪
+      - 🇧🇦
+      - 🇧🇷
+      - 🇬🇧
+      - 🇧🇬
+      - 🇨🇦
+      - 🇨🇱
+      - 🇨🇳
+      - 🇨🇴
+      - 🇭🇷
+      - 🇨🇾
+      - 🇨🇿
+      - 🇩🇰
+      - 🇪🇬
+      - 🇪🇪
+      - 🇫🇮
+      - 🇫🇷
+      - 🇩🇪
+      - 🇬🇷
+      - 🇭🇰
+      - 🇭🇺
+      - 🇮🇸
+      - 🇮🇳
+      - 🇮🇩
+      - 🇮🇪
+      - 🇮🇲
+      - 🇮🇱
+      - 🇮🇹
+      - 🇯🇵
+      - 🇰🇷
+      - 🇱🇻
+      - 🇱🇺
+      - 🇲🇰
+      - 🇲🇾
+      - 🇲🇹
+      - 🇲🇽
+      - 🇲🇩
+      - 🇳🇱
+      - 🇳🇿
+      - 🇳🇬
+      - 🇳🇴
+      - 🇵🇭
+      - 🇵🇱
+      - 🇵🇹
+      - 🇷🇴
+      - 🇷🇺
+      - 🇷🇸
+      - 🇸🇬
+      - 🇸🇰
+      - 🇸🇮
+      - 🇿🇦
+      - 🇪🇸
+      - 🇸🇪
+      - 🇨🇭
+      - 🇹🇼
+      - 🇹🇭
+      - 🇹🇷
+      - 🇦🇪
+      - 🇺🇦
+      - 🇺🇲
+      - 🇺🇸
+      - 🇻🇳
+  - name: 🔧 Service
+    type: select
+    proxies:
+      - O2ray
+      - Aloha
+      - Miscellaneous
+      - PrivateVPN
+      - Speedy Quark
+      - Time VPN
+      - UFO
+      - We VPN
+      - XY VPN
+  - name: 🌀 Protocol
+    type: select
+    proxies:
+      - 👻 SS
+      - 🐴 Trojan
+  - name: ✳️ Manual
+    type: select
+    use:
+      - all
+  - name: 🔃 Auto
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - all
+  - name: 🐴 Trojan
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - Trojan O2ray 🇦🇺
+      - Trojan O2ray 🇨🇿
+      - Trojan O2ray 🇮🇳
+      - Trojan O2ray 🇯🇵
+      - Trojan O2ray 🇸🇬
+      - Trojan O2ray 🇺🇸
+  - name: 👻 SS
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇦🇺
+      - SS O2ray 🇬🇧
+      - SS O2ray 🇧🇬
+      - SS O2ray 🇨🇦
+      - SS O2ray 🇨🇳
+      - SS O2ray 🇫🇷
+      - SS O2ray 🇩🇪
+      - SS O2ray 🇭🇰
+      - SS O2ray 🇮🇱
+      - SS O2ray 🇮🇹
+      - SS O2ray 🇯🇵
+      - SS O2ray 🇲🇽
+      - SS O2ray 🇳🇱
+      - SS O2ray 🇳🇿
+      - SS O2ray 🇵🇱
+      - SS O2ray 🇷🇺
+      - SS O2ray 🇸🇬
+      - SS O2ray 🇺🇸
+      - SS O2ray 🇻🇳
+      - SS Aloha 🇦🇷
+      - SS Aloha 🇦🇺
+      - SS Aloha 🇦🇹
+      - SS Aloha 🇦🇿
+      - SS Aloha 🇧🇪
+      - SS Aloha 🇧🇦
+      - SS Aloha 🇧🇷
+      - SS Aloha 🇬🇧
+      - SS Aloha 🇧🇬
+      - SS Aloha 🇨🇦
+      - SS Aloha 🇨🇱
+      - SS Aloha 🇨🇴
+      - SS Aloha 🇭🇷
+      - SS Aloha 🇨🇾
+      - SS Aloha 🇨🇿
+      - SS Aloha 🇩🇰
+      - SS Aloha 🇫🇮
+      - SS Aloha 🇫🇷
+      - SS Aloha 🇩🇪
+      - SS Aloha 🇬🇷
+      - SS Aloha 🇭🇰
+      - SS Aloha 🇭🇺
+      - SS Aloha 🇮🇳
+      - SS Aloha 🇮🇩
+      - SS Aloha 🇮🇪
+      - SS Aloha 🇮🇸
+      - SS Aloha 🇮🇲
+      - SS Aloha 🇮🇱
+      - SS Aloha 🇮🇹
+      - SS Aloha 🇯🇵
+      - SS Aloha 🇰🇷
+      - SS Aloha 🇱🇻
+      - SS Aloha 🇱🇺
+      - SS Aloha 🇲🇰
+      - SS Aloha 🇲🇾
+      - SS Aloha 🇲🇹
+      - SS Aloha 🇲🇽
+      - SS Aloha 🇲🇩
+      - SS Aloha 🇳🇱
+      - SS Aloha 🇳🇴
+      - SS Aloha 🇵🇱
+      - SS Aloha 🇵🇹
+      - SS Aloha 🇷🇴
+      - SS Aloha 🇷🇺
+      - SS Aloha 🇷🇸
+      - SS Aloha 🇸🇬
+      - SS Aloha 🇸🇰
+      - SS Aloha 🇸🇮
+      - SS Aloha 🇿🇦
+      - SS Aloha 🇪🇸
+      - SS Aloha 🇸🇪
+      - SS Aloha 🇨🇭
+      - SS Aloha 🇹🇼
+      - SS Aloha 🇹🇷
+      - SS Aloha 🇺🇦
+      - SS Aloha 🇺🇸
+      - SS Aloha 🇺🇲
+      - SS Aloha 🇻🇳
+      - SS Miscellaneous 🇦🇺
+      - SS Miscellaneous 🇬🇧
+      - SS Miscellaneous 🇭🇰
+      - SS Miscellaneous 🇯🇵
+      - SS Miscellaneous 🇰🇷
+      - SS PrivateVPN 🇬🇧
+      - SS PrivateVPN 🇫🇷
+      - SS PrivateVPN 🇸🇬
+      - SS Speedy Quark 🇦🇺
+      - SS Speedy Quark 🇦🇿
+      - SS Speedy Quark 🇧🇷
+      - SS Speedy Quark 🇬🇧
+      - SS Speedy Quark 🇨🇦
+      - SS Speedy Quark 🇩🇰
+      - SS Speedy Quark 🇪🇪
+      - SS Speedy Quark 🇫🇷
+      - SS Speedy Quark 🇩🇪
+      - SS Speedy Quark 🇬🇷
+      - SS Speedy Quark 🇭🇰
+      - SS Speedy Quark 🇭🇺
+      - SS Speedy Quark 🇮🇸
+      - SS Speedy Quark 🇮🇪
+      - SS Speedy Quark 🇮🇱
+      - SS Speedy Quark 🇮🇹
+      - SS Speedy Quark 🇯🇵
+      - SS Speedy Quark 🇰🇷
+      - SS Speedy Quark 🇳🇱
+      - SS Speedy Quark 🇳🇴
+      - SS Speedy Quark 🇵🇱
+      - SS Speedy Quark 🇷🇴
+      - SS Speedy Quark 🇷🇺
+      - SS Speedy Quark 🇸🇪
+      - SS Speedy Quark 🇨🇭
+      - SS Speedy Quark 🇹🇭
+      - SS Speedy Quark 🇹🇷
+      - SS Speedy Quark 🇺🇦
+      - SS Speedy Quark 🇺🇸
+      - SS Time VPN 🇩🇪
+      - SS Time VPN 🇳🇱
+      - SS Time VPN 🇷🇺
+      - SS Time VPN 🇸🇪
+      - SS Time VPN 🇺🇸
+      - SS UFO 🇦🇺
+      - SS UFO 🇧🇪
+      - SS UFO 🇧🇷
+      - SS UFO 🇬🇧
+      - SS UFO 🇨🇦
+      - SS UFO 🇨🇳
+      - SS UFO 🇫🇷
+      - SS UFO 🇩🇪
+      - SS UFO 🇭🇰
+      - SS UFO 🇮🇳
+      - SS UFO 🇮🇪
+      - SS UFO 🇮🇱
+      - SS UFO 🇮🇹
+      - SS UFO 🇯🇵
+      - SS UFO 🇰🇷
+      - SS UFO 🇳🇱
+      - SS UFO 🇳🇿
+      - SS UFO 🇳🇴
+      - SS UFO 🇵🇭
+      - SS UFO 🇷🇺
+      - SS UFO 🇸🇬
+      - SS UFO 🇸🇪
+      - SS UFO 🇨🇭
+      - SS UFO 🇹🇼
+      - SS UFO 🇹🇷
+      - SS UFO 🇦🇪
+      - SS UFO 🇺🇸
+      - SS We VPN 🇦🇷
+      - SS We VPN 🇦🇹
+      - SS We VPN 🇧🇪
+      - SS We VPN 🇧🇬
+      - SS We VPN 🇨🇿
+      - SS We VPN 🇪🇬
+      - SS We VPN 🇫🇮
+      - SS We VPN 🇮🇳
+      - SS We VPN 🇮🇩
+      - SS We VPN 🇱🇺
+      - SS We VPN 🇲🇾
+      - SS We VPN 🇲🇽
+      - SS We VPN 🇳🇿
+      - SS We VPN 🇳🇬
+      - SS We VPN 🇵🇭
+      - SS We VPN 🇵🇹
+      - SS We VPN 🇷🇸
+      - SS We VPN 🇸🇬
+      - SS We VPN 🇿🇦
+      - SS We VPN 🇪🇸
+      - SS We VPN 🇹🇼
+      - SS We VPN 🇦🇪
+      - SS We VPN 🇻🇳
+      - SS XY VPN 🇬🇧
+      - SS XY VPN 🇨🇦
+      - SS XY VPN 🇫🇷
+      - SS XY VPN 🇩🇪
+      - SS XY VPN 🇮🇳
+      - SS XY VPN 🇮🇹
+      - SS XY VPN 🇯🇵
+      - SS XY VPN 🇰🇷
+      - SS XY VPN 🇳🇴
+      - SS XY VPN 🇵🇱
+      - SS XY VPN 🇺🇸
+  - name: O2ray
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇦🇺
+      - SS O2ray 🇬🇧
+      - SS O2ray 🇧🇬
+      - SS O2ray 🇨🇦
+      - SS O2ray 🇨🇳
+      - SS O2ray 🇫🇷
+      - SS O2ray 🇩🇪
+      - SS O2ray 🇭🇰
+      - SS O2ray 🇮🇱
+      - SS O2ray 🇮🇹
+      - SS O2ray 🇯🇵
+      - SS O2ray 🇲🇽
+      - SS O2ray 🇳🇱
+      - SS O2ray 🇳🇿
+      - SS O2ray 🇵🇱
+      - SS O2ray 🇷🇺
+      - SS O2ray 🇸🇬
+      - SS O2ray 🇺🇸
+      - SS O2ray 🇻🇳
+  - name: Aloha
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇦🇷
+      - SS Aloha 🇦🇺
+      - SS Aloha 🇦🇹
+      - SS Aloha 🇦🇿
+      - SS Aloha 🇧🇪
+      - SS Aloha 🇧🇦
+      - SS Aloha 🇧🇷
+      - SS Aloha 🇬🇧
+      - SS Aloha 🇧🇬
+      - SS Aloha 🇨🇦
+      - SS Aloha 🇨🇱
+      - SS Aloha 🇨🇴
+      - SS Aloha 🇭🇷
+      - SS Aloha 🇨🇾
+      - SS Aloha 🇨🇿
+      - SS Aloha 🇩🇰
+      - SS Aloha 🇫🇮
+      - SS Aloha 🇫🇷
+      - SS Aloha 🇩🇪
+      - SS Aloha 🇬🇷
+      - SS Aloha 🇭🇰
+      - SS Aloha 🇭🇺
+      - SS Aloha 🇮🇳
+      - SS Aloha 🇮🇩
+      - SS Aloha 🇮🇪
+      - SS Aloha 🇮🇸
+      - SS Aloha 🇮🇲
+      - SS Aloha 🇮🇱
+      - SS Aloha 🇮🇹
+      - SS Aloha 🇯🇵
+      - SS Aloha 🇰🇷
+      - SS Aloha 🇱🇻
+      - SS Aloha 🇱🇺
+      - SS Aloha 🇲🇰
+      - SS Aloha 🇲🇾
+      - SS Aloha 🇲🇹
+      - SS Aloha 🇲🇽
+      - SS Aloha 🇲🇩
+      - SS Aloha 🇳🇱
+      - SS Aloha 🇳🇴
+      - SS Aloha 🇵🇱
+      - SS Aloha 🇵🇹
+      - SS Aloha 🇷🇴
+      - SS Aloha 🇷🇺
+      - SS Aloha 🇷🇸
+      - SS Aloha 🇸🇬
+      - SS Aloha 🇸🇰
+      - SS Aloha 🇸🇮
+      - SS Aloha 🇿🇦
+      - SS Aloha 🇪🇸
+      - SS Aloha 🇸🇪
+      - SS Aloha 🇨🇭
+      - SS Aloha 🇹🇼
+      - SS Aloha 🇹🇷
+      - SS Aloha 🇺🇦
+      - SS Aloha 🇺🇸
+      - SS Aloha 🇺🇲
+      - SS Aloha 🇻🇳
+  - name: Miscellaneous
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Miscellaneous 🇦🇺
+      - SS Miscellaneous 🇬🇧
+      - SS Miscellaneous 🇭🇰
+      - SS Miscellaneous 🇯🇵
+      - SS Miscellaneous 🇰🇷
+  - name: PrivateVPN
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS PrivateVPN 🇬🇧
+      - SS PrivateVPN 🇫🇷
+      - SS PrivateVPN 🇸🇬
+  - name: Speedy Quark
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Speedy Quark 🇦🇺
+      - SS Speedy Quark 🇦🇿
+      - SS Speedy Quark 🇧🇷
+      - SS Speedy Quark 🇬🇧
+      - SS Speedy Quark 🇨🇦
+      - SS Speedy Quark 🇩🇰
+      - SS Speedy Quark 🇪🇪
+      - SS Speedy Quark 🇫🇷
+      - SS Speedy Quark 🇩🇪
+      - SS Speedy Quark 🇬🇷
+      - SS Speedy Quark 🇭🇰
+      - SS Speedy Quark 🇭🇺
+      - SS Speedy Quark 🇮🇸
+      - SS Speedy Quark 🇮🇪
+      - SS Speedy Quark 🇮🇱
+      - SS Speedy Quark 🇮🇹
+      - SS Speedy Quark 🇯🇵
+      - SS Speedy Quark 🇰🇷
+      - SS Speedy Quark 🇳🇱
+      - SS Speedy Quark 🇳🇴
+      - SS Speedy Quark 🇵🇱
+      - SS Speedy Quark 🇷🇴
+      - SS Speedy Quark 🇷🇺
+      - SS Speedy Quark 🇸🇪
+      - SS Speedy Quark 🇨🇭
+      - SS Speedy Quark 🇹🇭
+      - SS Speedy Quark 🇹🇷
+      - SS Speedy Quark 🇺🇦
+      - SS Speedy Quark 🇺🇸
+  - name: Time VPN
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Time VPN 🇩🇪
+      - SS Time VPN 🇳🇱
+      - SS Time VPN 🇷🇺
+      - SS Time VPN 🇸🇪
+      - SS Time VPN 🇺🇸
+  - name: UFO
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS UFO 🇦🇺
+      - SS UFO 🇧🇪
+      - SS UFO 🇧🇷
+      - SS UFO 🇬🇧
+      - SS UFO 🇨🇦
+      - SS UFO 🇨🇳
+      - SS UFO 🇫🇷
+      - SS UFO 🇩🇪
+      - SS UFO 🇭🇰
+      - SS UFO 🇮🇳
+      - SS UFO 🇮🇪
+      - SS UFO 🇮🇱
+      - SS UFO 🇮🇹
+      - SS UFO 🇯🇵
+      - SS UFO 🇰🇷
+      - SS UFO 🇳🇱
+      - SS UFO 🇳🇿
+      - SS UFO 🇳🇴
+      - SS UFO 🇵🇭
+      - SS UFO 🇷🇺
+      - SS UFO 🇸🇬
+      - SS UFO 🇸🇪
+      - SS UFO 🇨🇭
+      - SS UFO 🇹🇼
+      - SS UFO 🇹🇷
+      - SS UFO 🇦🇪
+      - SS UFO 🇺🇸
+  - name: We VPN
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS We VPN 🇦🇷
+      - SS We VPN 🇦🇹
+      - SS We VPN 🇧🇪
+      - SS We VPN 🇧🇬
+      - SS We VPN 🇨🇿
+      - SS We VPN 🇪🇬
+      - SS We VPN 🇫🇮
+      - SS We VPN 🇮🇳
+      - SS We VPN 🇮🇩
+      - SS We VPN 🇱🇺
+      - SS We VPN 🇲🇾
+      - SS We VPN 🇲🇽
+      - SS We VPN 🇳🇿
+      - SS We VPN 🇳🇬
+      - SS We VPN 🇵🇭
+      - SS We VPN 🇵🇹
+      - SS We VPN 🇷🇸
+      - SS We VPN 🇸🇬
+      - SS We VPN 🇿🇦
+      - SS We VPN 🇪🇸
+      - SS We VPN 🇹🇼
+      - SS We VPN 🇦🇪
+      - SS We VPN 🇻🇳
+  - name: XY VPN
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS XY VPN 🇬🇧
+      - SS XY VPN 🇨🇦
+      - SS XY VPN 🇫🇷
+      - SS XY VPN 🇩🇪
+      - SS XY VPN 🇮🇳
+      - SS XY VPN 🇮🇹
+      - SS XY VPN 🇯🇵
+      - SS XY VPN 🇰🇷
+      - SS XY VPN 🇳🇴
+      - SS XY VPN 🇵🇱
+      - SS XY VPN 🇺🇸
+  - name: 🇦🇷
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇦🇷
+      - SS We VPN 🇦🇷
+  - name: 🇦🇺
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇦🇺
+      - SS Aloha 🇦🇺
+      - SS Miscellaneous 🇦🇺
+      - SS Speedy Quark 🇦🇺
+      - SS UFO 🇦🇺
+      - Trojan O2ray 🇦🇺
+  - name: 🇦🇹
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇦🇹
+      - SS We VPN 🇦🇹
+  - name: 🇦🇿
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇦🇿
+      - SS Speedy Quark 🇦🇿
+  - name: 🇧🇪
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇧🇪
+      - SS UFO 🇧🇪
+      - SS We VPN 🇧🇪
+  - name: 🇧🇦
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇧🇦
+  - name: 🇧🇷
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇧🇷
+      - SS Speedy Quark 🇧🇷
+      - SS UFO 🇧🇷
+  - name: 🇬🇧
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇬🇧
+      - SS Aloha 🇬🇧
+      - SS Miscellaneous 🇬🇧
+      - SS PrivateVPN 🇬🇧
+      - SS Speedy Quark 🇬🇧
+      - SS UFO 🇬🇧
+      - SS XY VPN 🇬🇧
+  - name: 🇧🇬
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇧🇬
+      - SS Aloha 🇧🇬
+      - SS We VPN 🇧🇬
+  - name: 🇨🇦
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇨🇦
+      - SS Aloha 🇨🇦
+      - SS Speedy Quark 🇨🇦
+      - SS UFO 🇨🇦
+      - SS XY VPN 🇨🇦
+  - name: 🇨🇱
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇨🇱
+  - name: 🇨🇳
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇨🇳
+      - SS UFO 🇨🇳
+  - name: 🇨🇴
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇨🇴
+  - name: 🇭🇷
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇭🇷
+  - name: 🇨🇾
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇨🇾
+  - name: 🇨🇿
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇨🇿
+      - SS We VPN 🇨🇿
+      - Trojan O2ray 🇨🇿
+  - name: 🇩🇰
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇩🇰
+      - SS Speedy Quark 🇩🇰
+  - name: 🇪🇬
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS We VPN 🇪🇬
+  - name: 🇪🇪
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Speedy Quark 🇪🇪
+  - name: 🇫🇮
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇫🇮
+      - SS We VPN 🇫🇮
+  - name: 🇫🇷
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇫🇷
+      - SS Aloha 🇫🇷
+      - SS PrivateVPN 🇫🇷
+      - SS Speedy Quark 🇫🇷
+      - SS UFO 🇫🇷
+      - SS XY VPN 🇫🇷
+  - name: 🇩🇪
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇩🇪
+      - SS Aloha 🇩🇪
+      - SS Speedy Quark 🇩🇪
+      - SS Time VPN 🇩🇪
+      - SS UFO 🇩🇪
+      - SS XY VPN 🇩🇪
+  - name: 🇬🇷
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇬🇷
+      - SS Speedy Quark 🇬🇷
+  - name: 🇭🇰
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇭🇰
+      - SS Aloha 🇭🇰
+      - SS Miscellaneous 🇭🇰
+      - SS Speedy Quark 🇭🇰
+      - SS UFO 🇭🇰
+  - name: 🇭🇺
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇭🇺
+      - SS Speedy Quark 🇭🇺
+  - name: 🇮🇸
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇮🇸
+      - SS Speedy Quark 🇮🇸
+  - name: 🇮🇳
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇮🇳
+      - SS UFO 🇮🇳
+      - SS We VPN 🇮🇳
+      - SS XY VPN 🇮🇳
+      - Trojan O2ray 🇮🇳
+  - name: 🇮🇩
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇮🇩
+      - SS We VPN 🇮🇩
+  - name: 🇮🇪
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇮🇪
+      - SS Speedy Quark 🇮🇪
+      - SS UFO 🇮🇪
+  - name: 🇮🇲
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇮🇲
+  - name: 🇮🇱
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇮🇱
+      - SS Aloha 🇮🇱
+      - SS Speedy Quark 🇮🇱
+      - SS UFO 🇮🇱
+  - name: 🇮🇹
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇮🇹
+      - SS Aloha 🇮🇹
+      - SS Speedy Quark 🇮🇹
+      - SS UFO 🇮🇹
+      - SS XY VPN 🇮🇹
+  - name: 🇯🇵
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇯🇵
+      - SS Aloha 🇯🇵
+      - SS Miscellaneous 🇯🇵
+      - SS Speedy Quark 🇯🇵
+      - SS UFO 🇯🇵
+      - SS XY VPN 🇯🇵
+      - Trojan O2ray 🇯🇵
+  - name: 🇰🇷
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇰🇷
+      - SS Miscellaneous 🇰🇷
+      - SS Speedy Quark 🇰🇷
+      - SS UFO 🇰🇷
+      - SS XY VPN 🇰🇷
+  - name: 🇱🇻
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇱🇻
+  - name: 🇱🇺
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇱🇺
+      - SS We VPN 🇱🇺
+  - name: 🇲🇰
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇲🇰
+  - name: 🇲🇾
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇲🇾
+      - SS We VPN 🇲🇾
+  - name: 🇲🇹
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇲🇹
+  - name: 🇲🇽
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇲🇽
+      - SS Aloha 🇲🇽
+      - SS We VPN 🇲🇽
+  - name: 🇲🇩
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇲🇩
+  - name: 🇳🇱
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇳🇱
+      - SS Aloha 🇳🇱
+      - SS Speedy Quark 🇳🇱
+      - SS Time VPN 🇳🇱
+      - SS UFO 🇳🇱
+  - name: 🇳🇿
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇳🇿
+      - SS UFO 🇳🇿
+      - SS We VPN 🇳🇿
+  - name: 🇳🇬
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS We VPN 🇳🇬
+  - name: 🇳🇴
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇳🇴
+      - SS Speedy Quark 🇳🇴
+      - SS UFO 🇳🇴
+      - SS XY VPN 🇳🇴
+  - name: 🇵🇭
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS UFO 🇵🇭
+      - SS We VPN 🇵🇭
+  - name: 🇵🇱
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇵🇱
+      - SS Aloha 🇵🇱
+      - SS Speedy Quark 🇵🇱
+      - SS XY VPN 🇵🇱
+  - name: 🇵🇹
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇵🇹
+      - SS We VPN 🇵🇹
+  - name: 🇷🇴
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇷🇴
+      - SS Speedy Quark 🇷🇴
+  - name: 🇷🇺
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇷🇺
+      - SS Aloha 🇷🇺
+      - SS Speedy Quark 🇷🇺
+      - SS Time VPN 🇷🇺
+      - SS UFO 🇷🇺
+  - name: 🇷🇸
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇷🇸
+      - SS We VPN 🇷🇸
+  - name: 🇸🇬
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇸🇬
+      - SS Aloha 🇸🇬
+      - SS PrivateVPN 🇸🇬
+      - SS UFO 🇸🇬
+      - SS We VPN 🇸🇬
+      - Trojan O2ray 🇸🇬
+  - name: 🇸🇰
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇸🇰
+  - name: 🇸🇮
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇸🇮
+  - name: 🇿🇦
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇿🇦
+      - SS We VPN 🇿🇦
+  - name: 🇪🇸
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇪🇸
+      - SS We VPN 🇪🇸
+  - name: 🇸🇪
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇸🇪
+      - SS Speedy Quark 🇸🇪
+      - SS Time VPN 🇸🇪
+      - SS UFO 🇸🇪
+  - name: 🇨🇭
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇨🇭
+      - SS Speedy Quark 🇨🇭
+      - SS UFO 🇨🇭
+  - name: 🇹🇼
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇹🇼
+      - SS UFO 🇹🇼
+      - SS We VPN 🇹🇼
+  - name: 🇹🇭
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Speedy Quark 🇹🇭
+  - name: 🇹🇷
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇹🇷
+      - SS Speedy Quark 🇹🇷
+      - SS UFO 🇹🇷
+  - name: 🇦🇪
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS UFO 🇦🇪
+      - SS We VPN 🇦🇪
+  - name: 🇺🇦
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇺🇦
+      - SS Speedy Quark 🇺🇦
+  - name: 🇺🇲
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS Aloha 🇺🇲
+  - name: 🇻🇳
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇻🇳
+      - SS Aloha 🇻🇳
+      - SS We VPN 🇻🇳
+  - name: 🇺🇸
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS O2ray 🇺🇸
+      - SS Aloha 🇺🇸
+      - SS Speedy Quark 🇺🇸
+      - SS Time VPN 🇺🇸
+      - SS UFO 🇺🇸
+      - SS XY VPN 🇺🇸
+      - Trojan O2ray 🇺🇸
+
+proxy-providers:
+  Trojan O2ray 🇦🇺:
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/trojan/o2ray/o2ray-trojan-australia.yaml"
+    path: trojan/o2ray/o2ray-trojan-australia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Trojan O2ray 🇨🇿:
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/trojan/o2ray/o2ray-trojan-czechia.yaml"
+    path: trojan/o2ray/o2ray-trojan-czechia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Trojan O2ray 🇮🇳:
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/trojan/o2ray/o2ray-trojan-india.yaml"
+    path: trojan/o2ray/o2ray-trojan-india.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Trojan O2ray 🇯🇵:
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/trojan/o2ray/o2ray-trojan-japan.yaml"
+    path: trojan/o2ray/o2ray-trojan-japan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Trojan O2ray 🇸🇬:
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/trojan/o2ray/o2ray-trojan-singapore.yaml"
+    path: trojan/o2ray/o2ray-trojan-singapore.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  Trojan O2ray 🇺🇸:
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/trojan/o2ray/o2ray-trojan-us.yaml"
+    path: trojan/o2ray/o2ray-trojan-us.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇦🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-australia.yaml"
+    path: o2ray/o2ray-ss-australia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇬🇧: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-britain.yaml"
+    path: o2ray/o2ray-ss-britain.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇧🇬: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-bulgaria.yaml"
+    path: o2ray/o2ray-ss-bulgaria.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇨🇦: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-canada.yaml"
+    path: o2ray/o2ray-ss-canada.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇨🇳: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-china.yaml"
+    path: o2ray/o2ray-ss-china.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇫🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-france.yaml"
+    path: o2ray/o2ray-ss-france.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇩🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-germany.yaml"
+    path: o2ray/o2ray-ss-germany.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇭🇰: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-hongkong.yaml"
+    path: o2ray/o2ray-ss-hongkong.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇮🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-israel.yaml"
+    path: o2ray/o2ray-ss-israel.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇮🇹: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-italy.yaml"
+    path: o2ray/o2ray-ss-italy.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇯🇵: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-japan.yaml"
+    path: o2ray/o2ray-ss-japan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇲🇽: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-mexico.yaml"
+    path: o2ray/o2ray-ss-mexico.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇳🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-netherlands.yaml"
+    path: o2ray/o2ray-ss-netherlands.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇳🇿: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-newzealand.yaml"
+    path: o2ray/o2ray-ss-newzealand.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇵🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-poland.yaml"
+    path: o2ray/o2ray-ss-poland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇷🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-russia.yaml"
+    path: o2ray/o2ray-ss-russia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇸🇬: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-singapore.yaml"
+    path: o2ray/o2ray-ss-singapore.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇺🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-us.yaml"
+    path: o2ray/o2ray-ss-us.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS O2ray 🇻🇳: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/o2ray/o2ray-ss-vietnam.yaml"
+    path: o2ray/o2ray-ss-vietnam.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇦🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-argentina.yaml"
+    path: aloha/aloha-ss-argentina.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇦🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-australia.yaml"
+    path: aloha/aloha-ss-australia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇦🇹: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-austria.yaml"
+    path: aloha/aloha-ss-austria.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇦🇿: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-azerbaijan.yaml"
+    path: aloha/aloha-ss-azerbaijan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇧🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-belgium.yaml"
+    path: aloha/aloha-ss-belgium.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇧🇦: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-bosnia.yaml"
+    path: aloha/aloha-ss-bosnia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇧🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-brazil.yaml"
+    path: aloha/aloha-ss-brazil.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇬🇧: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-britain.yaml"
+    path: aloha/aloha-ss-britain.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇧🇬: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-bulgaria.yaml"
+    path: aloha/aloha-ss-bulgaria.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇨🇦: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-canada.yaml"
+    path: aloha/aloha-ss-canada.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇨🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-chile.yaml"
+    path: aloha/aloha-ss-chile.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇨🇴: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-colombia.yaml"
+    path: aloha/aloha-ss-colombia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇭🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-croatia.yaml"
+    path: aloha/aloha-ss-croatia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇨🇾: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-cyprus.yaml"
+    path: aloha/aloha-ss-cyprus.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇨🇿: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-czechia.yaml"
+    path: aloha/aloha-ss-czechia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇩🇰: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-denmark.yaml"
+    path: aloha/aloha-ss-denmark.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇫🇮: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-finland.yaml"
+    path: aloha/aloha-ss-finland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇫🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-france.yaml"
+    path: aloha/aloha-ss-france.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇩🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-germany.yaml"
+    path: aloha/aloha-ss-germany.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇬🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-greece.yaml"
+    path: aloha/aloha-ss-greece.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇭🇰: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-hongkong.yaml"
+    path: aloha/aloha-ss-hongkong.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇭🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-hungary.yaml"
+    path: aloha/aloha-ss-hungary.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇮🇳: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-india.yaml"
+    path: aloha/aloha-ss-india.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇮🇩: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-indonesia.yaml"
+    path: aloha/aloha-ss-indonesia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇮🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-ireland.yaml"
+    path: aloha/aloha-ss-ireland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇮🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-iceland.yaml"
+    path: aloha/aloha-ss-iceland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇮🇲: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-isleofman.yaml"
+    path: aloha/aloha-ss-isleofman.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇮🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-israel.yaml"
+    path: aloha/aloha-ss-israel.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇮🇹: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-italy.yaml"
+    path: aloha/aloha-ss-italy.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇯🇵: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-japan.yaml"
+    path: aloha/aloha-ss-japan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇰🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-korea.yaml"
+    path: aloha/aloha-ss-korea.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇱🇻: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-latvia.yaml"
+    path: aloha/aloha-ss-latvia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇱🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-luxemborg.yaml"
+    path: aloha/aloha-ss-luxemborg.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇲🇰: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-macedonia.yaml"
+    path: aloha/aloha-ss-macedonia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇲🇾: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-malaysia.yaml"
+    path: aloha/aloha-ss-malaysia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇲🇹: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-malta.yaml"
+    path: aloha/aloha-ss-malta.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇲🇽: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-mexico.yaml"
+    path: aloha/aloha-ss-mexico.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇲🇩: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-moldova.yaml"
+    path: aloha/aloha-ss-moldova.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇳🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-netherlands.yaml"
+    path: aloha/aloha-ss-netherlands.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇳🇴: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-norway.yaml"
+    path: aloha/aloha-ss-norway.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇵🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-poland.yaml"
+    path: aloha/aloha-ss-poland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇵🇹: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-portugal.yaml"
+    path: aloha/aloha-ss-portugal.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇷🇴: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-romania.yaml"
+    path: aloha/aloha-ss-romania.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇷🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-russia.yaml"
+    path: aloha/aloha-ss-russia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇷🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-serbia.yaml"
+    path: aloha/aloha-ss-serbia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇸🇬: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-singapore.yaml"
+    path: aloha/aloha-ss-singapore.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇸🇰: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-slovakia.yaml"
+    path: aloha/aloha-ss-slovakia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇸🇮: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-slovenia.yaml"
+    path: aloha/aloha-ss-slovenia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇿🇦: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-southafrica.yaml"
+    path: aloha/aloha-ss-southafrica.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇪🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-spain.yaml"
+    path: aloha/aloha-ss-spain.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇸🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-sweden.yaml"
+    path: aloha/aloha-ss-sweden.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇨🇭: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-switzerland.yaml"
+    path: aloha/aloha-ss-switzerland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇹🇼: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-taiwan.yaml"
+    path: aloha/aloha-ss-taiwan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇹🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-turkey.yaml"
+    path: aloha/aloha-ss-turkey.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇺🇦: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-ukraine.yaml"
+    path: aloha/aloha-ss-ukraine.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇺🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-us.yaml"
+    path: aloha/aloha-ss-us.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇺🇲: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-usisland.yaml"
+    path: aloha/aloha-ss-usisland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Aloha 🇻🇳: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/aloha/aloha-ss-vietnam.yaml"
+    path: aloha/aloha-ss-vietnam.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Miscellaneous 🇦🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/misc/misc-ss-australia.yaml"
+    path: misc/misc-ss-australia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Miscellaneous 🇬🇧: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/misc/misc-ss-britain.yaml"
+    path: misc/misc-ss-britain.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Miscellaneous 🇭🇰: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/misc/misc-ss-hongkong.yaml"
+    path: misc/misc-ss-hongkong.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Miscellaneous 🇯🇵: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/misc/misc-ss-japan.yaml"
+    path: misc/misc-ss-japan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Miscellaneous 🇰🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/misc/misc-ss-korea.yaml"
+    path: misc/misc-ss-korea.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS PrivateVPN 🇬🇧: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/private/private-ss-britain.yaml"
+    path: private/private-ss-britain.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS PrivateVPN 🇫🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/private/private-ss-france.yaml"
+    path: private/private-ss-france.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS PrivateVPN 🇸🇬: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/private/private-ss-singapore.yaml"
+    path: private/private-ss-singapore.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇦🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-australia.yaml"
+    path: sq/sq-ss-australia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇦🇿: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-azerbaijan.yaml"
+    path: sq/sq-ss-azerbaijan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇧🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-brazil.yaml"
+    path: sq/sq-ss-brazil.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇬🇧: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-britain.yaml"
+    path: sq/sq-ss-britain.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇨🇦: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-canada.yaml"
+    path: sq/sq-ss-canada.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇩🇰: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-denmark.yaml"
+    path: sq/sq-ss-denmark.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇪🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-estonia.yaml"
+    path: sq/sq-ss-estonia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇫🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-france.yaml"
+    path: sq/sq-ss-france.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇩🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-germany.yaml"
+    path: sq/sq-ss-germany.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇬🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-greece.yaml"
+    path: sq/sq-ss-greece.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇭🇰: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-hongkong.yaml"
+    path: sq/sq-ss-hongkong.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇭🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-hungary.yaml"
+    path: sq/sq-ss-hungary.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇮🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-iceland.yaml"
+    path: sq/sq-ss-iceland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇮🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-ireland.yaml"
+    path: sq/sq-ss-ireland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇮🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-israel.yaml"
+    path: sq/sq-ss-israel.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇮🇹: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-italy.yaml"
+    path: sq/sq-ss-italy.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇯🇵: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-japan.yaml"
+    path: sq/sq-ss-japan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇰🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-korea.yaml"
+    path: sq/sq-ss-korea.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇳🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-netherlands.yaml"
+    path: sq/sq-ss-netherlands.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇳🇴: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-norway.yaml"
+    path: sq/sq-ss-norway.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇵🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-poland.yaml"
+    path: sq/sq-ss-poland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇷🇴: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-romania.yaml"
+    path: sq/sq-ss-romania.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇷🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-russia.yaml"
+    path: sq/sq-ss-russia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇸🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-sweden.yaml"
+    path: sq/sq-ss-sweden.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇨🇭: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-switzerland.yaml"
+    path: sq/sq-ss-switzerland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇹🇭: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-thailand.yaml"
+    path: sq/sq-ss-thailand.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇹🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-turkey.yaml"
+    path: sq/sq-ss-turkey.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇺🇦: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-ukraine.yaml"
+    path: sq/sq-ss-ukraine.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Speedy Quark 🇺🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/sq/sq-ss-us.yaml"
+    path: sq/sq-ss-us.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Time VPN 🇩🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/time/time-ss-germany.yaml"
+    path: time/time-ss-germany.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Time VPN 🇳🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/time/time-ss-netherlands.yaml"
+    path: time/time-ss-netherlands.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Time VPN 🇷🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/time/time-ss-russia.yaml"
+    path: time/time-ss-russia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Time VPN 🇸🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/time/time-ss-sweden.yaml"
+    path: time/time-ss-sweden.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS Time VPN 🇺🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/time/time-ss-us.yaml"
+    path: time/time-ss-us.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇦🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-australia.yaml"
+    path: ufo/ufo-ss-australia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇧🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-belgium.yaml"
+    path: ufo/ufo-ss-belgium.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇧🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-brazil.yaml"
+    path: ufo/ufo-ss-brazil.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇬🇧: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-britain.yaml"
+    path: ufo/ufo-ss-britain.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇨🇦: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-canada.yaml"
+    path: ufo/ufo-ss-canada.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇨🇳: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-china.yaml"
+    path: ufo/ufo-ss-china.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇫🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-france.yaml"
+    path: ufo/ufo-ss-france.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇩🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-germany.yaml"
+    path: ufo/ufo-ss-germany.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇭🇰: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-hongkong.yaml"
+    path: ufo/ufo-ss-hongkong.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇮🇳: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-india.yaml"
+    path: ufo/ufo-ss-india.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇮🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-ireland.yaml"
+    path: ufo/ufo-ss-ireland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇮🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-israel.yaml"
+    path: ufo/ufo-ss-israel.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇮🇹: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-italy.yaml"
+    path: ufo/ufo-ss-italy.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇯🇵: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-japan.yaml"
+    path: ufo/ufo-ss-japan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇰🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-korea.yaml"
+    path: ufo/ufo-ss-korea.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇳🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-netherlands.yaml"
+    path: ufo/ufo-ss-netherlands.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇳🇿: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-newzealand.yaml"
+    path: ufo/ufo-ss-newzealand.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇳🇴: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-norway.yaml"
+    path: ufo/ufo-ss-norway.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇵🇭: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-philippines.yaml"
+    path: ufo/ufo-ss-philippines.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇷🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-russia.yaml"
+    path: ufo/ufo-ss-russia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇸🇬: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-singapore.yaml"
+    path: ufo/ufo-ss-singapore.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇸🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-sweden.yaml"
+    path: ufo/ufo-ss-sweden.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇨🇭: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-switzerland.yaml"
+    path: ufo/ufo-ss-switzerland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇹🇼: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-taiwan.yaml"
+    path: ufo/ufo-ss-taiwan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇹🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-turkey.yaml"
+    path: ufo/ufo-ss-turkey.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇦🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-uae.yaml"
+    path: ufo/ufo-ss-uae.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS UFO 🇺🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/ufo/ufo-ss-us.yaml"
+    path: ufo/ufo-ss-us.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇦🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-argentina.yaml"
+    path: we/we-ss-argentina.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇦🇹: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-austria.yaml"
+    path: we/we-ss-austria.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇧🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-belgium.yaml"
+    path: we/we-ss-belgium.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇧🇬: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-bulgaria.yaml"
+    path: we/we-ss-bulgaria.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇨🇿: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-czechia.yaml"
+    path: we/we-ss-czechia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇪🇬: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-egypt.yaml"
+    path: we/we-ss-egypt.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇫🇮: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-finland.yaml"
+    path: we/we-ss-finland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇮🇳: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-india.yaml"
+    path: we/we-ss-india.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇮🇩: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-indonesia.yaml"
+    path: we/we-ss-indonesia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇱🇺: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-luxemborg.yaml"
+    path: we/we-ss-luxemborg.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇲🇾: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-malaysia.yaml"
+    path: we/we-ss-malaysia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇲🇽: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-mexico.yaml"
+    path: we/we-ss-mexico.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇳🇿: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-newzealand.yaml"
+    path: we/we-ss-newzealand.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇳🇬: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-nigeria.yaml"
+    path: we/we-ss-nigeria.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇵🇭: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-philippines.yaml"
+    path: we/we-ss-philippines.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇵🇹: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-portugal.yaml"
+    path: we/we-ss-portugal.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇷🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-serbia.yaml"
+    path: we/we-ss-serbia.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇸🇬: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-singapore.yaml"
+    path: we/we-ss-singapore.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇿🇦: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-southafrica.yaml"
+    path: we/we-ss-southafrica.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇪🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-spain.yaml"
+    path: we/we-ss-spain.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇹🇼: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-taiwan.yaml"
+    path: we/we-ss-taiwan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇦🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-uae.yaml"
+    path: we/we-ss-uae.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS We VPN 🇻🇳: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/we/we-ss-vietnam.yaml"
+    path: we/we-ss-vietnam.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇬🇧: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-britain.yaml"
+    path: xy/xy-ss-britain.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇨🇦: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-canada.yaml"
+    path: xy/xy-ss-canada.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇫🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-france.yaml"
+    path: xy/xy-ss-france.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇩🇪: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-germany.yaml"
+    path: xy/xy-ss-germany.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇮🇳: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-india.yaml"
+    path: xy/xy-ss-india.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇮🇹: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-italy.yaml"
+    path: xy/xy-ss-italy.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇯🇵: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-japan.yaml"
+    path: xy/xy-ss-japan.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇰🇷: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-korea.yaml"
+    path: xy/xy-ss-korea.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇳🇴: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-norway.yaml"
+    path: xy/xy-ss-norway.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇵🇱: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-poland.yaml"
+    path: xy/xy-ss-poland.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+  SS XY VPN 🇺🇸: 
+    type: http
+    url: "https://raw.githubusercontent.com/lonelyglitch/proxies/main/ss/xy/xy-ss-us.yaml"
+    path: xy/xy-ss-us.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: http://www.gstatic.com/generate_204
+
+rules:
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - GEOIP,IR,DIRECT
+  - MATCH,,🔰 Select,dns-failed
