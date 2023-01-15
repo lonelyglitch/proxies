@@ -1,2 +1,2 @@
 proxies:
-- {name: "🇨🇿 1", password: "HTrovQkamDxNfaD5", port: "443", server: "cz5.v2ce.com", skip-cert-verify: "true", type: "trojan", udp: "true"}
+- {name: "🇨🇿 1", password: "HTrovQkamDxNfaD5", port: "443", server: "cz5.v2ce.com", skip-cert-verify: true, type: "trojan", udp: true}

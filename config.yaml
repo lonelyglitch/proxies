@@ -2546,4 +2546,3 @@ rules:
   - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
   - DOMAIN-SUFFIX,ad.com,REJECT
   - GEOIP,IR,DIRECT
-  - MATCH,,🔰 Select,dns-failed
