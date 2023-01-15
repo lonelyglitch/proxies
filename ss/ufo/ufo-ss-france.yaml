@@ -7,10 +7,10 @@ proxies:
 - {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 6", password: "G!yBwPWH3Vao", port: "812", server: "135.125.248.215", type : "ss"}
 - {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 7", password: "G!yBwPWH3Vao", port: "812", server: "15.236.142.139", type : "ss"}
 - {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 8", password: "G!yBwPWH3Vao", port: "812", server: "163.172.110.54", type : "ss"}
-- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 9", password: "G!yBwPWH3Vao", udp: "true", port: "803", server: "95.85.90.181", type : "ss"}
-- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 10", password: "G!yBwPWH3Vao", udp: "true", port: "812", server: "135.125.248.215", type : "ss"}
-- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 11", password: "G!yBwPWH3Vao", udp: "true", port: "803", server: "95.85.90.181", type : "ss"}
-- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 12", password: "G!yBwPWH3Vao", udp: "true", port: "807", server: "95.85.90.181", type : "ss"}
-- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 13", password: "G!yBwPWH3Vao", udp: "true", port: "808", server: "95.85.90.181", type : "ss"}
-- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 14", password: "G!yBwPWH3Vao", udp: "true", port: "810", server: "95.85.90.181", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 9", password: "G!yBwPWH3Vao", udp: true, port: "803", server: "95.85.90.181", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 10", password: "G!yBwPWH3Vao", udp: true, port: "812", server: "135.125.248.215", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 11", password: "G!yBwPWH3Vao", udp: true, port: "803", server: "95.85.90.181", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 12", password: "G!yBwPWH3Vao", udp: true, port: "807", server: "95.85.90.181", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 13", password: "G!yBwPWH3Vao", udp: true, port: "808", server: "95.85.90.181", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 14", password: "G!yBwPWH3Vao", udp: true, port: "810", server: "95.85.90.181", type : "ss"}
 - {cipher: "chacha20-ietf-poly1305", name: "🇫🇷 15", password: "G!yBwPWH3Vao", port: "812", server: "135.125.248.215", type : "ss"}

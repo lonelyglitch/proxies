@@ -1,4 +1,4 @@
 proxies:
 - {cipher: "aes-256-cfb", name: "🇧🇪 1", password: "f8f7aCzcPKbsF8p3", port: "989", server: "192.71.249.240", type : "ss"}
-- {cipher: "aes-256-cfb", name: "🇧🇪 2", password: "f8f7aCzcPKbsF8p3", udp: "true", port: "989", server: "194.71.227.178", type : "ss"}
-- {cipher: "aes-256-cfb", name: "🇧🇪 3", password: "f8f7aCzcPKbsF8p3", udp: "true", port: "989", server: "192.71.249.240", type : "ss"}
+- {cipher: "aes-256-cfb", name: "🇧🇪 2", password: "f8f7aCzcPKbsF8p3", udp: true, port: "989", server: "194.71.227.178", type : "ss"}
+- {cipher: "aes-256-cfb", name: "🇧🇪 3", password: "f8f7aCzcPKbsF8p3", udp: true, port: "989", server: "192.71.249.240", type : "ss"}

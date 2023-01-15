@@ -9,15 +9,15 @@ proxies:
 - {cipher: "aes-256-gcm", name: "🇨🇦 8", password: "kDWvXYZoTBcGkC4", port: "8881", server: "134.195.196.130", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇨🇦 9", password: "kDWvXYZoTBcGkC4", port: "8881", server: "134.195.196.12", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇨🇦 10", password: "kDWvXYZoTBcGkC4", port: "8882", server: "134.195.196.12", type : "ss"}
-- {cipher: "aes-256-gcm", name: "🇨🇦 11", password: "faBAoD54k87UJG7", udp: "true", port: "2375", server: "134.195.196.81", type : "ss"}
-- {cipher: "aes-256-gcm", name: "🇨🇦 12", password: "faBAoD54k87UJG7", udp: "true", port: "2375", server: "134.195.196.165", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇨🇦 11", password: "faBAoD54k87UJG7", udp: true, port: "2375", server: "134.195.196.81", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇨🇦 12", password: "faBAoD54k87UJG7", udp: true, port: "2375", server: "134.195.196.165", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇨🇦 13", password: "faBAoD54k87UJG7", port: "2375", server: "134.195.196.230", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇨🇦 14", password: "faBAoD54k87UJG7", port: "2376", server: "134.195.196.219", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇨🇦 15", password: "faBAoD54k87UJG7", port: "2376", server: "134.195.196.64", type : "ss"}
-- {cipher: "aes-256-gcm", name: "🇨🇦 16", password: "FoOiGlkAA9yPEGP", udp: "true", port: "7307", server: "134.195.196.133", type : "ss"}
-- {cipher: "aes-256-gcm", name: "🇨🇦 17", password: "FoOiGlkAA9yPEGP", udp: "true", port: "7306", server: "134.195.196.165", type : "ss"}
-- {cipher: "aes-256-gcm", name: "🇨🇦 18", password: "FoOiGlkAA9yPEGP", udp: "true", port: "7307", server: "134.195.196.165", type : "ss"}
-- {cipher: "aes-256-gcm", name: "🇨🇦 19", password: "FoOiGlkAA9yPEGP", udp: "true", port: "7306", server: "134.195.198.250", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇨🇦 16", password: "FoOiGlkAA9yPEGP", udp: true, port: "7307", server: "134.195.196.133", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇨🇦 17", password: "FoOiGlkAA9yPEGP", udp: true, port: "7306", server: "134.195.196.165", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇨🇦 18", password: "FoOiGlkAA9yPEGP", udp: true, port: "7307", server: "134.195.196.165", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇨🇦 19", password: "FoOiGlkAA9yPEGP", udp: true, port: "7306", server: "134.195.198.250", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇨🇦 20", password: "TEzjfAYq2IjtuoS", port: "6679", server: "134.195.196.217", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇨🇦 21", password: "Y6R9pAtvxxzmGC", port: "5600", server: "134.195.196.217", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇨🇦 22", password: "RexnBgU7EV5ADxG", port: "7002", server: "134.195.196.217", type : "ss"}

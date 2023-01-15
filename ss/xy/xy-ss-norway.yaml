@@ -8,7 +8,7 @@ proxies:
 - {cipher: "aes-256-gcm", name: "🇳🇴 7", password: "faBAoD54k87UJG7", port: "2376", server: "46.29.218.6", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇳🇴 8", password: "kDWvXYZoTBcGkC4", port: "8882", server: "46.29.219.246", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇳🇴 9", password: "kDWvXYZoTBcGkC4", port: "8882", server: "46.29.218.6", type : "ss"}
-- {cipher: "aes-256-gcm", name: "🇳🇴 10", password: "faBAoD54k87UJG7", udp: "true", port: "2376", server: "46.29.219.246", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇳🇴 10", password: "faBAoD54k87UJG7", udp: true, port: "2376", server: "46.29.219.246", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇳🇴 11", password: "faBAoD54k87UJG7", port: "2375", server: "46.29.218.170", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇳🇴 12", password: "cdBIDV42DCwnfIN", port: "8118", server: "46.29.218.170", type : "ss"}
 - {cipher: "aes-256-gcm", name: "🇳🇴 13", password: "Y6R9pAtvxxzmGC", port: "5001", server: "46.29.218.170", type : "ss"}

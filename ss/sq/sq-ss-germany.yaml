@@ -2,4 +2,4 @@ proxies:
 - {cipher: "aes-256-cfb", name: "🇩🇪 1", password: "8460400130", port: "50003", server: "193.108.118.154", type : "ss"}
 - {cipher: "aes-256-cfb", name: "🇩🇪 2", password: "8460400130", port: "50003", server: "135.125.236.229", type : "ss"}
 - {cipher: "aes-256-cfb", name: "🇩🇪 3", password: "8460400130", port: "50003", server: "135.125.236.229", type : "ss"}
-- {cipher: "aes-256-cfb", name: "🇩🇪 4", password: "8460400130", udp: "true", port: "50003", server: "135.125.236.229", type : "ss"}
+- {cipher: "aes-256-cfb", name: "🇩🇪 4", password: "8460400130", udp: true, port: "50003", server: "135.125.236.229", type : "ss"}

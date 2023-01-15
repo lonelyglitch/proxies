@@ -7,5 +7,5 @@ proxies:
 - {cipher: "chacha20-ietf-poly1305", name: "🇩🇪 6", password: "G!yBwPWH3Vao", port: "812", server: "3.126.91.132", type : "ss"}
 - {cipher: "chacha20-ietf-poly1305", name: "🇩🇪 7", password: "G!yBwPWH3Vao", port: "812", server: "135.125.248.209", type : "ss"}
 - {cipher: "chacha20-ietf-poly1305", name: "🇩🇪 8", password: "G!yBwPWH3Vao", port: "812", server: "135.125.253.250", type : "ss"}
-- {cipher: "chacha20-ietf-poly1305", name: "🇩🇪 9", password: "G!yBwPWH3Vao", udp: "true", port: "800", server: "135.125.248.215", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇩🇪 9", password: "G!yBwPWH3Vao", udp: true, port: "800", server: "135.125.248.215", type : "ss"}
 - {cipher: "chacha20-ietf-poly1305", name: "🇩🇪 10", password: "G!yBwPWH3Vao", port: "812", server: "18.185.63.41", type : "ss"}
