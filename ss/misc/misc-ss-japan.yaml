@@ -1,0 +1,9 @@
+proxies:
+- {cipher: "aes-256-gcm", name: "🇯🇵 1", password: "XKFKl2rULjIp74", port: "8008", server: "85.208.108.134", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇯🇵 2", password: "KixLvKzwjekG00rm", port: "5500", server: "85.208.108.134", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇯🇵 3", password: "Y6R9pAtvxxzmGC", port: "5000", server: "85.208.108.134", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇯🇵 4", password: "XKFKl2rULjIp74", port: "8009", server: "85.208.108.134", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇯🇵 5", password: "cdBIDV42DCwnfIN", port: "8119", server: "85.208.110.2", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇯🇵 6", password: "e4FCWrgpkji3QY", port: "9101", server: "85.208.110.2", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇯🇵 7", password: "Y6R9pAtvxxzmGC", port: "3389", server: "85.208.110.2", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇯🇵 8", password: "FoOiGlkAA9yPEGP", port: "7306", server: "85.208.110.2", type : "ss"}

@@ -1,0 +1,2 @@
+proxies:
+- {cipher: "chacha20-ietf-poly1305", name: "🇹🇼 1", password: "cNbqVVyUfbJFZ6S8EgRH", port: "8389", server: "188.214.106.98", type : "ss"}

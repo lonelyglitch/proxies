@@ -1,0 +1,2 @@
+proxies:
+- {cipher: "aes-256-cfb", name: "🇳🇴 1", password: "f8f7aCzcPKbsF8p3", udp: "true", port: "989", server: "194.68.32.29", type : "ss"}

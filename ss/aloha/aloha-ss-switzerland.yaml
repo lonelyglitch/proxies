@@ -1,0 +1,4 @@
+proxies:
+- {cipher: "aes-256-cfb", name: "🇨🇭 1", password: "f8f7aCzcPKbsF8p3", port: "989", server: "212.237.210.158", type : "ss"}
+- {cipher: "aes-256-cfb", name: "🇨🇭 2", password: "f8f7aCzcPKbsF8p3", port: "989", server: "212.237.210.158", type : "ss"}
+- {cipher: "aes-256-cfb", name: "🇨🇭 3", password: "f8f7aCzcPKbsF8p3", udp: "true", port: "989", server: "212.237.210.158", type : "ss"}

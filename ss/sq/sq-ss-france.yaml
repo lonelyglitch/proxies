@@ -1,0 +1,2 @@
+proxies:
+- {cipher: "aes-256-cfb", name: "🇫🇷 1", password: "8460400130", port: "50003", server: "5.188.93.79", type : "ss"}

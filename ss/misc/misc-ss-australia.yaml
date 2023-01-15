@@ -1,0 +1,2 @@
+proxies:
+- {cipher: "aes-256-gcm", name: "🇦🇺 1", password: "KixLvKzwjekG00rm", port: "8000", server: "192.53.169.116", type : "ss"}

@@ -1,0 +1,4 @@
+proxies:
+- {cipher: "aes-256-gcm", name: "🇯🇵 1", password: "kDWvXYZoTBcGkC4", port: "8881", server: "85.208.108.134", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇯🇵 2", password: "kDWvXYZoTBcGkC4", port: "8882", server: "85.208.110.2", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇯🇵 3", password: "faBAoD54k87UJG7", port: "2375", server: "85.208.110.2", type : "ss"}

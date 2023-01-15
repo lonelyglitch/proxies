@@ -1,0 +1,7 @@
+proxies:
+- {cipher: "aes-256-gcm", name: "🇩🇪 1", password: "faBAoD54k87UJG7", port: "2376", server: "172.105.244.165", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇩🇪 2", password: "faBAoD54k87UJG7", port: "2376", server: "146.0.36.23", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇩🇪 3", password: "faBAoD54k87UJG7", port: "2376", server: "91.194.84.53", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇩🇪 4", password: "faBAoD54k87UJG7", port: "2376", server: "172.105.244.165", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇩🇪 5", password: "faBAoD54k87UJG7", port: "2376", server: "146.0.36.23", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇩🇪 6", password: "faBAoD54k87UJG7", port: "2376", server: "91.194.84.53", type : "ss"}

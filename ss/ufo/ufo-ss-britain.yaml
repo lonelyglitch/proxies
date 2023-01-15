@@ -1,0 +1,8 @@
+proxies:
+- {cipher: "chacha20-ietf-poly1305", name: "🇬🇧 1", password: "G!yBwPWH3Vao", port: "812", server: "78.129.253.9", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇬🇧 2", password: "G!yBwPWH3Vao", port: "812", server: "89.35.29.96", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇬🇧 3", password: "G!yBwPWH3Vao", port: "812", server: "35.177.29.114", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇬🇧 4", password: "G!yBwPWH3Vao", port: "812", server: "89.238.165.226", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇬🇧 5", password: "G!yBwPWH3Vao", port: "812", server: "89.34.96.73", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇬🇧 6", password: "G!yBwPWH3Vao", port: "812", server: "92.223.59.188", type : "ss"}
+- {cipher: "chacha20-ietf-poly1305", name: "🇬🇧 7", password: "G!yBwPWH3Vao", port: "812", server: "92.223.59.188", type : "ss"}

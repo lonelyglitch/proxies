@@ -1,0 +1,20 @@
+proxies:
+- {cipher: "aes-256-gcm", name: "🇰🇷 1", password: "RexnBgU7EV5ADxG", port: "7002", server: "141.164.47.208", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 2", password: "Y6R9pAtvxxzmGC", port: "5001", server: "141.164.47.208", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 3", password: "e4FCWrgpkji3QY", port: "9101", server: "141.164.47.208", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 4", password: "KixLvKzwjekG00rm", port: "5500", server: "141.164.47.208", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 5", password: "zDNVedRFPQexG9v", port: "6379", server: "141.164.47.208", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 6", password: "FoOiGlkAA9yPEGP", port: "7307", server: "141.164.47.208", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 7", password: "FoOiGlkAA9yPEGP", port: "7306", server: "141.164.56.250", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 8", password: "RexnBgU7EV5ADxG", port: "7001", server: "141.164.56.250", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 9", password: "Y6R9pAtvxxzmGC", port: "3306", server: "141.164.56.250", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 10", password: "pKEW8JPByTVTLtM", port: "443", server: "141.164.56.250", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 11", password: "Y6R9pAtvxxzmGC", port: "5600", server: "141.164.56.250", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 12", password: "XKFKl2rULjIp74", port: "8008", server: "141.164.38.135", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 13", password: "RexnBgU7EV5ADxG", port: "7002", server: "141.164.38.135", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 14", password: "Y6R9pAtvxxzmGC", port: "5601", server: "141.164.49.240", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 15", password: "Y6R9pAtvxxzmGC", port: "3389", server: "141.164.49.240", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 16", password: "e4FCWrgpkji3QY", port: "9102", server: "141.164.49.240", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 17", password: "Y6R9pAtvxxzmGC", port: "5600", server: "141.164.56.110", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 18", password: "KixLvKzwjekG00rm", port: "8080", server: "141.164.56.110", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 19", password: "Y6R9pAtvxxzmGC", port: "5000", server: "141.164.46.233", type : "ss"}

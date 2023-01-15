@@ -1,0 +1,4 @@
+proxies:
+- {cipher: "aes-256-gcm", name: "🇮🇹 1", password: "hg49$WH8943g3", port: "18760", server: "84.33.193.79", type: "ss"}
+- {cipher: "aes-256-gcm", name: "🇮🇹 2", password: "hg49$WH8943g3", port: "18760", server: "84.33.193.79", type: "ss"}
+- {cipher: "aes-256-gcm", name: "🇮🇹 3", password: "hg49$WH8943g3", port: "18760", server: "84.33.193.79", type: "ss"}

@@ -1,0 +1,3 @@
+proxies:
+- {name: "🇺🇸 1", password: "f39bd244-f5fe-415c-8b98-a1e5250bf178", port: "443", server: "fhcarm2.gaox.ml", skip-cert-verify: "true", type: "trojan", udp: "true"}
+- {name: "🇺🇸 2", password: "05742120-ce23-4cc8-88f5-6d221ce45bf4", port: "443", server: "fhcarm1.gaox.ml", skip-cert-verify: "true", type: "trojan", udp: "true"}

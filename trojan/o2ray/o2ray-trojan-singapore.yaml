@@ -1,0 +1,2 @@
+proxies:
+- {name: "🇸🇬 1", password: "'123456'", port: "443", server: "trojan-ctb-sg01.globalssh.xyz", skip-cert-verify: "true", type: "trojan", udp: "true"}

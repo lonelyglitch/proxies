@@ -1,0 +1,2 @@
+proxies:
+- {name: "🇮🇳 1", password: "006baa3f-4bc3-4915-b60d-c8c5dae11a11", port: "443", server: "jgwhdlb3.gaox.ml", skip-cert-verify: "true", type: "trojan", udp: "true"}

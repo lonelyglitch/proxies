@@ -1,0 +1,5 @@
+proxies:
+- {cipher: "aes-256-gcm", name: "🇰🇷 1", password: "PCnnH6SQSnfoS27", port: "8091", server: "158.247.223.116", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 2", password: "PCnnH6SQSnfoS27", port: "8091", server: "158.247.224.123", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 3", password: "PCnnH6SQSnfoS27", port: "8090", server: "141.164.56.110", type : "ss"}
+- {cipher: "aes-256-gcm", name: "🇰🇷 4", password: "PCnnH6SQSnfoS27", port: "8091", server: "141.164.46.233", type : "ss"}

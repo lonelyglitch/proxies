@@ -1,0 +1,4 @@
+proxies:
+- {cipher: "aes-256-cfb", name: "🇮🇹 1", password: "8460400130", port: "50003", server: "91.193.5.198", type : "ss"}
+- {cipher: "aes-256-cfb", name: "🇮🇹 2", password: "8460400130", port: "50003", server: "5.188.226.125", type : "ss"}
+- {cipher: "aes-256-cfb", name: "🇮🇹 3", password: "8460400130", port: "50003", server: "92.223.93.140", type : "ss"}
