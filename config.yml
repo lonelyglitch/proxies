@@ -6,8 +6,6 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 
-proxies:
-
 proxy-groups:
   - name: 🔰 Select
     type: select
@@ -89,15 +87,24 @@ proxy-groups:
   - name: 🔧 Service
     type: select
     proxies:
-      - O2ray
-      - Aloha
-      - Miscellaneous
-      - PrivateVPN
-      - Speedy Quark
-      - Time VPN
-      - UFO
-      - We VPN
-      - XY VPN
+      - 🔃 O2ray
+      - 🔃 Aloha
+      - 🔃 Miscellaneous
+      - 🔃 PrivateVPN
+      - 🔃 Speedy Quark
+      - 🔃 Time VPN
+      - 🔃 UFO
+      - 🔃 We VPN
+      - 🔃 XY VPN
+      - ✳️ O2ray
+      - ✳️ Aloha
+      - ✳️ Miscellaneous
+      - ✳️ PrivateVPN
+      - ✳️ Speedy Quark
+      - ✳️ Time VPN
+      - ✳️ UFO
+      - ✳️ We VPN
+      - ✳️ XY VPN
   - name: 🔃 Auto
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
@@ -309,7 +316,7 @@ proxy-groups:
       - SS XY VPN 🇳🇴
       - SS XY VPN 🇵🇱
       - SS XY VPN 🇺🇸
-  - name: O2ray
+  - name: 🔃 O2ray
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -333,7 +340,7 @@ proxy-groups:
       - SS O2ray 🇸🇬
       - SS O2ray 🇺🇸
       - SS O2ray 🇻🇳
-  - name: Aloha
+  - name: 🔃 Aloha
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -396,7 +403,7 @@ proxy-groups:
       - SS Aloha 🇺🇸
       - SS Aloha 🇺🇲
       - SS Aloha 🇻🇳
-  - name: Miscellaneous
+  - name: 🔃 Miscellaneous
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -406,7 +413,7 @@ proxy-groups:
       - SS Miscellaneous 🇭🇰
       - SS Miscellaneous 🇯🇵
       - SS Miscellaneous 🇰🇷
-  - name: PrivateVPN
+  - name: 🔃 PrivateVPN
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -414,7 +421,7 @@ proxy-groups:
       - SS PrivateVPN 🇬🇧
       - SS PrivateVPN 🇫🇷
       - SS PrivateVPN 🇸🇬
-  - name: Speedy Quark
+  - name: 🔃 Speedy Quark
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -448,7 +455,7 @@ proxy-groups:
       - SS Speedy Quark 🇹🇷
       - SS Speedy Quark 🇺🇦
       - SS Speedy Quark 🇺🇸
-  - name: Time VPN
+  - name: 🔃 Time VPN
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -458,7 +465,7 @@ proxy-groups:
       - SS Time VPN 🇷🇺
       - SS Time VPN 🇸🇪
       - SS Time VPN 🇺🇸
-  - name: UFO
+  - name: 🔃 UFO
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -490,7 +497,7 @@ proxy-groups:
       - SS UFO 🇹🇷
       - SS UFO 🇦🇪
       - SS UFO 🇺🇸
-  - name: We VPN
+  - name: 🔃 We VPN
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -518,9 +525,225 @@ proxy-groups:
       - SS We VPN 🇹🇼
       - SS We VPN 🇦🇪
       - SS We VPN 🇻🇳
-  - name: XY VPN
+  - name: 🔃 XY VPN
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - SS XY VPN 🇬🇧
+      - SS XY VPN 🇨🇦
+      - SS XY VPN 🇫🇷
+      - SS XY VPN 🇩🇪
+      - SS XY VPN 🇮🇳
+      - SS XY VPN 🇮🇹
+      - SS XY VPN 🇯🇵
+      - SS XY VPN 🇰🇷
+      - SS XY VPN 🇳🇴
+      - SS XY VPN 🇵🇱
+      - SS XY VPN 🇺🇸
+  - name: ✳️ O2ray
+    type: select
+    interval: 300
+    use:
+      - SS O2ray 🇦🇺
+      - SS O2ray 🇬🇧
+      - SS O2ray 🇧🇬
+      - SS O2ray 🇨🇦
+      - SS O2ray 🇨🇳
+      - SS O2ray 🇫🇷
+      - SS O2ray 🇩🇪
+      - SS O2ray 🇭🇰
+      - SS O2ray 🇮🇱
+      - SS O2ray 🇮🇹
+      - SS O2ray 🇯🇵
+      - SS O2ray 🇲🇽
+      - SS O2ray 🇳🇱
+      - SS O2ray 🇳🇿
+      - SS O2ray 🇵🇱
+      - SS O2ray 🇷🇺
+      - SS O2ray 🇸🇬
+      - SS O2ray 🇺🇸
+      - SS O2ray 🇻🇳
+  - name: ✳️ Aloha
+    type: select
+    interval: 300
+    use:
+      - SS Aloha 🇦🇷
+      - SS Aloha 🇦🇺
+      - SS Aloha 🇦🇹
+      - SS Aloha 🇦🇿
+      - SS Aloha 🇧🇪
+      - SS Aloha 🇧🇦
+      - SS Aloha 🇧🇷
+      - SS Aloha 🇬🇧
+      - SS Aloha 🇧🇬
+      - SS Aloha 🇨🇦
+      - SS Aloha 🇨🇱
+      - SS Aloha 🇨🇴
+      - SS Aloha 🇭🇷
+      - SS Aloha 🇨🇾
+      - SS Aloha 🇨🇿
+      - SS Aloha 🇩🇰
+      - SS Aloha 🇫🇮
+      - SS Aloha 🇫🇷
+      - SS Aloha 🇩🇪
+      - SS Aloha 🇬🇷
+      - SS Aloha 🇭🇰
+      - SS Aloha 🇭🇺
+      - SS Aloha 🇮🇳
+      - SS Aloha 🇮🇩
+      - SS Aloha 🇮🇪
+      - SS Aloha 🇮🇸
+      - SS Aloha 🇮🇲
+      - SS Aloha 🇮🇱
+      - SS Aloha 🇮🇹
+      - SS Aloha 🇯🇵
+      - SS Aloha 🇰🇷
+      - SS Aloha 🇱🇻
+      - SS Aloha 🇱🇺
+      - SS Aloha 🇲🇰
+      - SS Aloha 🇲🇾
+      - SS Aloha 🇲🇹
+      - SS Aloha 🇲🇽
+      - SS Aloha 🇲🇩
+      - SS Aloha 🇳🇱
+      - SS Aloha 🇳🇴
+      - SS Aloha 🇵🇱
+      - SS Aloha 🇵🇹
+      - SS Aloha 🇷🇴
+      - SS Aloha 🇷🇺
+      - SS Aloha 🇷🇸
+      - SS Aloha 🇸🇬
+      - SS Aloha 🇸🇰
+      - SS Aloha 🇸🇮
+      - SS Aloha 🇿🇦
+      - SS Aloha 🇪🇸
+      - SS Aloha 🇸🇪
+      - SS Aloha 🇨🇭
+      - SS Aloha 🇹🇼
+      - SS Aloha 🇹🇷
+      - SS Aloha 🇺🇦
+      - SS Aloha 🇺🇸
+      - SS Aloha 🇺🇲
+      - SS Aloha 🇻🇳
+  - name: ✳️ Miscellaneous
+    type: select
+    interval: 300
+    use:
+      - SS Miscellaneous 🇦🇺
+      - SS Miscellaneous 🇬🇧
+      - SS Miscellaneous 🇭🇰
+      - SS Miscellaneous 🇯🇵
+      - SS Miscellaneous 🇰🇷
+  - name: ✳️ PrivateVPN
+    type: select
+    interval: 300
+    use:
+      - SS PrivateVPN 🇬🇧
+      - SS PrivateVPN 🇫🇷
+      - SS PrivateVPN 🇸🇬
+  - name: ✳️ Speedy Quark
+    type: select
+    interval: 300
+    use:
+      - SS Speedy Quark 🇦🇺
+      - SS Speedy Quark 🇦🇿
+      - SS Speedy Quark 🇧🇷
+      - SS Speedy Quark 🇬🇧
+      - SS Speedy Quark 🇨🇦
+      - SS Speedy Quark 🇩🇰
+      - SS Speedy Quark 🇪🇪
+      - SS Speedy Quark 🇫🇷
+      - SS Speedy Quark 🇩🇪
+      - SS Speedy Quark 🇬🇷
+      - SS Speedy Quark 🇭🇰
+      - SS Speedy Quark 🇭🇺
+      - SS Speedy Quark 🇮🇸
+      - SS Speedy Quark 🇮🇪
+      - SS Speedy Quark 🇮🇱
+      - SS Speedy Quark 🇮🇹
+      - SS Speedy Quark 🇯🇵
+      - SS Speedy Quark 🇰🇷
+      - SS Speedy Quark 🇳🇱
+      - SS Speedy Quark 🇳🇴
+      - SS Speedy Quark 🇵🇱
+      - SS Speedy Quark 🇷🇴
+      - SS Speedy Quark 🇷🇺
+      - SS Speedy Quark 🇸🇪
+      - SS Speedy Quark 🇨🇭
+      - SS Speedy Quark 🇹🇭
+      - SS Speedy Quark 🇹🇷
+      - SS Speedy Quark 🇺🇦
+      - SS Speedy Quark 🇺🇸
+  - name: ✳️ Time VPN
+    type: select
+    interval: 300
+    use:
+      - SS Time VPN 🇩🇪
+      - SS Time VPN 🇳🇱
+      - SS Time VPN 🇷🇺
+      - SS Time VPN 🇸🇪
+      - SS Time VPN 🇺🇸
+  - name: ✳️ UFO
+    type: select
+    interval: 300
+    use:
+      - SS UFO 🇦🇺
+      - SS UFO 🇧🇪
+      - SS UFO 🇧🇷
+      - SS UFO 🇬🇧
+      - SS UFO 🇨🇦
+      - SS UFO 🇨🇳
+      - SS UFO 🇫🇷
+      - SS UFO 🇩🇪
+      - SS UFO 🇭🇰
+      - SS UFO 🇮🇳
+      - SS UFO 🇮🇪
+      - SS UFO 🇮🇱
+      - SS UFO 🇮🇹
+      - SS UFO 🇯🇵
+      - SS UFO 🇰🇷
+      - SS UFO 🇳🇱
+      - SS UFO 🇳🇿
+      - SS UFO 🇳🇴
+      - SS UFO 🇵🇭
+      - SS UFO 🇷🇺
+      - SS UFO 🇸🇬
+      - SS UFO 🇸🇪
+      - SS UFO 🇨🇭
+      - SS UFO 🇹🇼
+      - SS UFO 🇹🇷
+      - SS UFO 🇦🇪
+      - SS UFO 🇺🇸
+  - name: ✳️ We VPN
+    type: select
+    interval: 300
+    use:
+      - SS We VPN 🇦🇷
+      - SS We VPN 🇦🇹
+      - SS We VPN 🇧🇪
+      - SS We VPN 🇧🇬
+      - SS We VPN 🇨🇿
+      - SS We VPN 🇪🇬
+      - SS We VPN 🇫🇮
+      - SS We VPN 🇮🇳
+      - SS We VPN 🇮🇩
+      - SS We VPN 🇱🇺
+      - SS We VPN 🇲🇾
+      - SS We VPN 🇲🇽
+      - SS We VPN 🇳🇿
+      - SS We VPN 🇳🇬
+      - SS We VPN 🇵🇭
+      - SS We VPN 🇵🇹
+      - SS We VPN 🇷🇸
+      - SS We VPN 🇸🇬
+      - SS We VPN 🇿🇦
+      - SS We VPN 🇪🇸
+      - SS We VPN 🇹🇼
+      - SS We VPN 🇦🇪
+      - SS We VPN 🇻🇳
+  - name: ✳️ XY VPN
+    type: select
     interval: 300
     use:
       - SS XY VPN 🇬🇧
